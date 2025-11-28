@@ -5,12 +5,15 @@ public class UtilityTool {
         System.out.println("Sum Result = " + addNumbers(1, 2));
         System.out.println("Current Time: " + getCurrentTime());
         System.out.println("Hostname: " + getHostName());
+        System.out.println("Max Number = " + findMax(10, 7));
     }
 
     public static int addNumbers(int a, int b) {
         return a + b;
     }
-
+    public static int findMax(int a, int b) {
+    return (a > b) ? a : b;
+} 
     public static String getCurrentTime() {
         return java.time.LocalTime.now().toString();
     }
