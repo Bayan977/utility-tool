@@ -5,12 +5,15 @@ public class UtilityTool {
         System.out.println("Sum Result = " + addNumbers(1, 2));
         System.out.println("Current Time: " + getCurrentTime());
         System.out.println("Hostname: " + getHostName());
+        System.out.println("Subtraction Result = " + subtractNumbers(5, 2));
     }
 
     public static int addNumbers(int a, int b) {
         return a + b;
     }
-
+    public static int subtractNumbers(int a, int b) {
+    return a - b;
+}
     public static String getCurrentTime() {
         return java.time.LocalTime.now().toString();
     }
@@ -20,6 +23,6 @@ public class UtilityTool {
             return java.net.InetAddress.getLocalHost().getHostName();
         } catch (Exception e) {
             return "Unknown Host";
-        }
+    
+}   }
     }
-}
