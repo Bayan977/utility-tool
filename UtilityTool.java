@@ -6,12 +6,15 @@ public class UtilityTool {
         System.out.println("Current Time: " + getCurrentTime());
         System.out.println("Hostname: " + getHostName());
         System.out.println("Subtraction Result = " + subtractNumbers(5, 2));
+        System.out.println("Max Number = " + findMax(10, 7));
     }
 
     public static int addNumbers(int a, int b) {
         return a + b;
     }
-    public static int subtractNumbers(int a, int b) {
+    public static int findMax(int a, int b) {
+    return (a > b) ? a : b;
+}     public static int subtractNumbers(int a, int b) {
     return a - b;
 }
     public static String getCurrentTime() {
